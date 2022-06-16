@@ -1,4 +1,4 @@
-﻿namespace calculadora
+namespace calculadora
 {
     internal class Program
     {
@@ -15,6 +15,7 @@
             {
                 Console.Clear();
                 Console.WriteLine("Ingrese la operación que desea realizar [0]:SUMA - [1]:RESTA - [2]:MULTIPLICACIÓN - [3]:DIVISIÓN");
+                Console.WriteLine($"El valor actual guardado es: {nuevaCalculadora.resultado}");
                 operacion = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Ingrese el numero a operar: ");
                 valor = Convert.ToDouble(Console.ReadLine());
